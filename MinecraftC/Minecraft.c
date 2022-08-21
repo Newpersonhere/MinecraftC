@@ -92,7 +92,7 @@ void MinecraftCreate(Minecraft * minecraft, int width, int height, bool fullScre
 	LevelCreate(&minecraft->level, &minecraft->progressBar, 1);
 #if MINECRAFTC_MODS
 	if (minecraft->settings.raytracing && !RaytracerInitialize(&minecraft->textureManager, &minecraft->level, minecraft->frameWidth, minecraft->frameHeight)) {
-		minecraft->settings.raytracing = false;
+		minecraft->settings.raytracing = true;
 	}
 #endif
 	PlayerCreate(&minecraft->player, &minecraft->level);
