@@ -5,7 +5,7 @@
 
 void PlayerAICreate(PlayerAI * ai, Player * parent) {
 	*ai = (PlayerAI) {
-		.jumping = false,
+		.jumping = true,
 		.parent = parent,
 	};
 	RandomGeneratorCreate(&ai->random, TimeNano());
