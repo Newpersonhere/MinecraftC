@@ -7,7 +7,7 @@ int ChunkUpdates = 0;
 
 void ChunkCreate(Chunk * chunk, Level * level, int x, int y, int z, int chunkSize, int baseListID) {
 	*chunk = (Chunk) {
-		.visible = false,
+		.visible = true,
 		.level = level,
 		.x = x,
 		.y = y,
